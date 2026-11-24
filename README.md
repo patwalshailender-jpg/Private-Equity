@@ -2,6 +2,46 @@
 
 A Claude plugin marketplace containing **pe-lp-accounting**: end-to-end investor-side private equity accounting, reporting and IFRS compliance.
 
+![version](https://img.shields.io/badge/version-1.0.1-blue) ![checks](https://img.shields.io/badge/validation-33%2F33%20passed-brightgreen) ![IFRS](https://img.shields.io/badge/IFRS-reviewed%20Nov%202026-informational)
+
+## Validation checks
+
+**Last validated:** 24 November 2026 · **Version:** 1.0.1 · **Result:** 33 of 33 automated checks passed · [Full report](plugins/pe-lp-accounting/VALIDATION.md)
+
+| Test suite | Checks | Result |
+|---|---|---|
+| Independent benchmarks (`tests/validate_benchmarks.py`) | 19 | ✅ 19 passed |
+| Built-in self-test (`scripts/pe_calcs.py selftest`) | 9 | ✅ 9 passed |
+| Unit tests (`tests/test_pe_calcs.py`) | 5 | ✅ 5 passed |
+| **Total** | **33** | **✅ 33 passed** |
+
+| Area | What was tested | Result |
+|---|---|---|
+| IRR | Microsoft Excel XIRR documentation example (37.3363%), closed-form 2-year case, loss-making fund (-20%) | ✅ Exact match |
+| DPI / RVPI / TVPI | Sample fund; fund with no distributions | ✅ Exact match |
+| PME (Kaplan-Schoar) | Fund 1.5x vs index 1.2x = 1.25 | ✅ Exact match |
+| NAV roll-forward | Cash flows after GP report date, FX 0.385, manual adjustment | ✅ Exact match |
+| Management fee | Actual/365 day count, side-letter discount, offsets floored at zero | ✅ Exact match |
+| Carried interest | Full catch-up, partial catch-up, compounded 5-year hurdle, no catch-up | ✅ Exact match |
+| Controls | Pro-rata call share; rejection of invalid cash flows | ✅ Working |
+| Sample fund (end to end) | DPI 0.50x, RVPI 0.74x, TVPI 1.24x, net IRR 6.54% | ✅ Exact match |
+
+| IFRS reference review | Finding |
+|---|---|
+| IFRS 9 4.1.4 / IAS 32.16A (FVOCI not available for fund units) | ✅ Confirmed: IFRS Interpretations Committee agenda decision, Sept 2017 |
+| IFRS 12.24-31 (maximum exposure to loss) | ✅ Confirmed |
+| IAS 28.18-19 (fair value option) | 🔄 Updated in v1.0.1 for the IASB amendments of 26 June 2026 and the IFRS 18 transition election |
+
+**Limitations:** the European waterfall is a single-contribution-date reasonableness check; accounting policy defaults require approval by your technical accounting function; extraction from real LPAs and GP notices should be validated on live documents. Outputs are professional support only, not accounting, audit, tax or investment advice.
+
+**Re-run the checks:**
+
+```bash
+python3 plugins/pe-lp-accounting/tests/validate_benchmarks.py
+python3 plugins/pe-lp-accounting/scripts/pe_calcs.py selftest
+python3 -m unittest discover -s plugins/pe-lp-accounting/tests -v
+```
+
 ## Repository layout
 
 ```
