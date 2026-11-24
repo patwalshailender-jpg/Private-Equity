@@ -5,11 +5,11 @@ A Claude plugin marketplace containing **pe-lp-accounting**: end-to-end investor
 > **Disclaimer:** This plugin provides professional support for qualified finance teams. It is not accounting, audit, tax, legal or investment advice. All outputs, including figures, journal entries and IFRS disclosures, must be reviewed and approved by a qualified accountant before use. IFRS references should be confirmed against the current standards at https://www.ifrs.org.
 
 
-![version](https://img.shields.io/badge/version-1.0.3-blue) ![checks](https://img.shields.io/badge/validation-33%2F33%20passed-brightgreen) ![IFRS](https://img.shields.io/badge/IFRS-reviewed%20Nov%202026-informational)
+![version](https://img.shields.io/badge/version-1.0.4-blue) ![checks](https://img.shields.io/badge/validation-33%2F33%20passed-brightgreen) ![IFRS](https://img.shields.io/badge/IFRS-reviewed%20Nov%202026-informational)
 
 ## Validation checks
 
-**Last validated:** 24 November 2026 · **Version:** 1.0.3 · **Result:** 33 of 33 automated checks passed · [Full report](plugins/pe-lp-accounting/VALIDATION.md)
+**Last validated:** 24 November 2026 · **Version:** 1.0.4 · **Result:** 33 of 33 automated checks passed · [Full report](plugins/pe-lp-accounting/VALIDATION.md)
 
 | Test suite | Checks | Result |
 |---|---|---|
@@ -96,3 +96,7 @@ python3 -m unittest discover -s tools/tests -v
 ## Licence
 
 MIT. See [LICENSE](LICENSE). Copyright (c) 2026 patwalshailender-jpg.
+
+## Privacy
+
+The plugin stores and transmits no data. See [PRIVACY.md](PRIVACY.md).

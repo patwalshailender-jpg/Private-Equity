@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.4 - 24 November 2026
+- Privacy policy added (PRIVACY.md).
+
 ## 1.0.3 - 24 November 2026
 - Submission-ready: plugin folder now contains only Markdown, JSON and PNG files.
 - Calculation engine provided as `references/calculations.md`; data layouts as `references/templates.md`.

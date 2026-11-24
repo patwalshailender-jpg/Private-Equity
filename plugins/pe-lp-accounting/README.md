@@ -50,3 +50,7 @@ IFRS paragraph references should be confirmed against https://www.ifrs.org by yo
 ## Licence
 
 MIT. See [LICENSE](LICENSE). Copyright (c) 2026 patwalshailender-jpg.
+
+## Privacy
+
+The plugin stores and transmits no data. See [PRIVACY.md](PRIVACY.md).
