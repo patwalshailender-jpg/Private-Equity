@@ -11,7 +11,7 @@ Policies: `${CLAUDE_PLUGIN_ROOT}/references/policies.md`. Cite the policy number
 | Note | Content |
 |---|---|
 | Classification (IFRS 9) | Memo per fund: FVTPL, SPPI fail, FVOCI election not available (P1) |
-| Control / influence (IFRS 10 / IAS 28) | Annual assessment for large stakes; IAS 28.18 election where used (P12) |
+| Control / influence (IFRS 10 / IAS 28) | Annual assessment for large stakes; IAS 28.18-19 FVTPL election where used, including the June 2026 amendment extending eligibility to entities whose main business activity is investing, and the one-time switch available on IFRS 18 transition (P12) |
 | Fair value (IFRS 13) | Hierarchy table; valuation technique and inputs; Level 3 reconciliation (`/level3-rollforward`): opening, purchases (calls), sales / settlements (distributions), gains in P&L (realised / unrealised), transfers, closing; sensitivity narrative (e.g. +/-10% NAV) |
 | Risk (IFRS 7) | Market (price), currency, liquidity (unfunded commitments by expected drawdown year), credit (receivables); concentration |
 | Structured entities (IFRS 12) | Per fund or aggregated: nature, purpose, size (fund NAV), carrying amount, unfunded commitment, maximum exposure = carrying + unfunded, support provided (P13) |
