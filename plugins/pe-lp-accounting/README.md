@@ -2,6 +2,9 @@
 
 End-to-end private equity for the investor (Limited Partner), from fund due diligence to fund close-out, following IFRS and industry standards (ILPA templates, IPEV Valuation Guidelines).
 
+> **Disclaimer:** This plugin provides professional support for qualified finance teams. It is not accounting, audit, tax, legal or investment advice. All outputs, including figures, journal entries and IFRS disclosures, must be reviewed and approved by a qualified accountant before use. IFRS references should be confirmed against the current standards at https://www.ifrs.org.
+
+
 ## Contents
 
 | Folder | What it holds |
@@ -43,3 +46,7 @@ Connect in Claude settings (not bundled): document storage (SharePoint / OneDriv
 4. Run `python3 scripts/pe_calcs.py selftest`.
 
 IFRS paragraph references should be confirmed against https://www.ifrs.org by your technical accounting team before external use.
+
+## Licence
+
+MIT. See [LICENSE](LICENSE). Copyright (c) 2026 patwalshailender-jpg.
