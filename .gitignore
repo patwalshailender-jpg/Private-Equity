@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+# Never commit real fund data or credentials
+data/
+*.env

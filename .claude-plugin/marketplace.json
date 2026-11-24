@@ -1,0 +1,20 @@
+{
+  "name": "pe-plugins",
+  "owner": {
+    "name": "patwalshailender-jpg"
+  },
+  "metadata": {
+    "description": "Private equity plugins for investor-side (LP) accounting, reporting and IFRS",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "pe-lp-accounting",
+      "source": "./plugins/pe-lp-accounting",
+      "description": "End-to-end LP private equity: documents, capital calls, distributions, CV elections, fund accounting, reconciliations, NAV and performance reporting, IFRS disclosures, fees and carry, liquidity, compliance, audit and fund close-out.",
+      "version": "1.0.0",
+      "category": "finance",
+      "keywords": ["private-equity", "ifrs", "fund-accounting", "nav", "ilpa", "irr"]
+    }
+  ]
+}
