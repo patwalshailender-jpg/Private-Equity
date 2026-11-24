@@ -1,6 +1,6 @@
 ---
-name: pe-liquidity-tax
-description: Private equity liquidity and planning - cash-flow forecast of calls and distributions (Takahashi-Alexander), commitment pacing, allocation monitoring, liquidity coverage, annual PE budget, FX exposure and withholding tax reclaim tracking. Use for treasury planning, budgets, pacing plans, allocation reviews or WHT reclaims.
+name: "pe-liquidity-tax"
+description: "Private equity liquidity and planning - cash-flow forecast of calls and distributions (Takahashi-Alexander), commitment pacing, allocation monitoring, liquidity coverage, annual PE budget, FX exposure and withholding tax reclaim tracking. Use for treasury planning, budgets, pacing plans, allocation reviews or WHT reclaims."
 ---
 
 # Liquidity, pacing, FX and tax

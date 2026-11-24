@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.3 - 24 November 2026
+- Submission-ready: plugin folder now contains only Markdown, JSON and PNG files.
+- Calculation engine provided as `references/calculations.md`; data layouts as `references/templates.md`.
+- Command-line calculator, CSV templates and tests moved to repository `tools/` folder (33 of 33 checks still pass).
+- Plugin icon added; all command and skill frontmatter values quoted.
+
 ## 1.0.2 - 24 November 2026
 - MIT licence added.
 - Professional-use disclaimer added to README files.

@@ -6,7 +6,7 @@
 | C2 | Duplicate or missed notices | Notice ref + amount + date + file hash check; quarterly capital account reconciliation (R3) | Register, R3 |
 | C3 | Over-call | Hard stop: call <= unfunded + recallable | Validation record |
 | C4 | Pro-rata error | Our share = commitment / total fund commitments x total call | Validation record |
-| C5 | Fee / carry error | Independent recalculation (scripts/pe_calcs.py) within tolerance | Fee check file |
+| C5 | Fee / carry error | Independent recalculation (references/calculations.md) within tolerance | Fee check file |
 | C6 | Stale or unsupported NAV | Staleness flag, roll-forward, back-test, valuation memo | Memo |
 | C7 | Cut-off | Notice / due / value date logic; accruals J2, J10 | Cut-off report |
 | C8 | Segregation of duties | Preparer != reviewer != approver | Sign-off fields |

@@ -1,17 +1,17 @@
 ---
-name: pe-cash-events
-description: Process private equity capital call notices, distribution notices and continuation vehicle (CV) election packs - extract, validate against the fund master, classify components, prepare approvals and draft journals, and update commitment, unfunded and recallable registers. Use when a GP call, distribution or GP-led secondary election arrives.
+name: "pe-cash-events"
+description: "Process private equity capital call notices, distribution notices and continuation vehicle (CV) election packs - extract, validate against the fund master, classify components, prepare approvals and draft journals, and update commitment, unfunded and recallable registers. Use when a GP call, distribution or GP-led secondary election arrives."
 ---
 
 # Capital calls, distributions and CV elections
 
-Inputs: the notice (filed via `pe-documents`), the fund master, the cash-flow ledger (`${CLAUDE_PLUGIN_ROOT}/templates/cash_flow_ledger.csv`).
+Inputs: the notice (filed via `pe-documents`), the fund master, the cash-flow ledger (`${CLAUDE_PLUGIN_ROOT}/references/templates.md` (section cash_flow_ledger)).
 
 ## Seven-step workflow (no payment release before step 5)
 1. Capture - confirm the notice is in the register.
 2. Extract - notice no., notice date, due / value date, total fund amount, our amount, currency, bank details, component split.
 3. Validate (controls in `${CLAUDE_PLUGIN_ROOT}/references/controls.md`):
-   - C3 our call <= unfunded + recallable (compute with `scripts/pe_calcs.py`, function `unfunded`).
+   - C3 our call <= unfunded + recallable (compute with `references/calculations.md`, function `unfunded`).
    - C4 pro-rata: our amount = commitment / total fund commitments x fund-level amount (tolerance 0.01%).
    - C1 bank details equal the locked master; if not -> HOLD and require call-back evidence.
    - C2 duplicate check.
@@ -29,6 +29,6 @@ Output a one-page processing sheet: extracted data, check results (pass / fail /
 
 ## Continuation vehicle elections (`/cv-election`)
 1. Summarise the pack: assets moving, price vs latest NAV (discount / premium %), lead buyer, fairness opinion, fee and carry terms of the new vehicle, crystallised carry, status-quo option, deadline.
-2. Compare options: SELL (cash now, realised at price), ROLL (new commitment and terms), STATUS QUO if offered. Show DPI, IRR and exposure impact of each using `scripts/pe_calcs.py`.
+2. Compare options: SELL (cash now, realised at price), ROLL (new commitment and terms), STATUS QUO if offered. Show DPI, IRR and exposure impact of each using `references/calculations.md`.
 3. Flag conflicts of interest, LPAC consent status and missing information.
 4. Record the decision and approval; on SELL book as distribution (J6/J7); on ROLL onboard the new vehicle via `pe-fund-onboarding`.

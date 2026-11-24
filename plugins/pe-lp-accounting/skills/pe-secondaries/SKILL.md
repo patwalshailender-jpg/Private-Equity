@@ -1,6 +1,6 @@
 ---
-name: pe-secondaries
-description: Handle secondary transactions and changes to LP interests - pricing a secondary sale or purchase versus NAV, derecognition and purchase accounting, transfers of LP interests with GP consent, and LP default handling. Use when buying or selling fund interests, transferring commitments, or when a capital call default occurs.
+name: "pe-secondaries"
+description: "Handle secondary transactions and changes to LP interests - pricing a secondary sale or purchase versus NAV, derecognition and purchase accounting, transfers of LP interests with GP consent, and LP default handling. Use when buying or selling fund interests, transferring commitments, or when a capital call default occurs."
 ---
 
 # Secondaries, transfers and defaults

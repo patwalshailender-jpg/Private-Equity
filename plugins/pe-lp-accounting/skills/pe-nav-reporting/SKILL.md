@@ -1,11 +1,11 @@
 ---
-name: pe-nav-reporting
-description: Produce private equity NAV and performance reporting - commitment, called, unfunded, calls and distributions in period, reported and adjusted NAV, total value, IRR, DPI, RVPI, TVPI, KS-PME, J-curve, concentration and portfolio look-through, watch list, management dashboard. Use for quarterly NAV packs, commitment reports, performance questions or management / board PE reporting.
+name: "pe-nav-reporting"
+description: "Produce private equity NAV and performance reporting - commitment, called, unfunded, calls and distributions in period, reported and adjusted NAV, total value, IRR, DPI, RVPI, TVPI, KS-PME, J-curve, concentration and portfolio look-through, watch list, management dashboard. Use for quarterly NAV packs, commitment reports, performance questions or management / board PE reporting."
 ---
 
 # NAV and performance reporting
 
-All figures come from the cash-flow ledger and NAV history; all calculations run through `${CLAUDE_PLUGIN_ROOT}/scripts/pe_calcs.py` (xirr, multiples, ks_pme, unfunded). Field definitions follow the ILPA Reporting Template.
+All figures come from the cash-flow ledger and NAV history; all calculations run through `${CLAUDE_PLUGIN_ROOT}/references/calculations.md` (xirr, multiples, ks_pme, unfunded). Field definitions follow the ILPA Reporting Template.
 
 ## Fund schedule (`/nav-pack`)
 One row per fund, subtotals by strategy, vintage, currency, GP:

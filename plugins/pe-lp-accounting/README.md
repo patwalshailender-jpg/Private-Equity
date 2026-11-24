@@ -12,9 +12,9 @@ End-to-end private equity for the investor (Limited Partner), from fund due dili
 | `skills/` | 12 skills, one per module (loaded automatically when relevant) |
 | `commands/` | 43 slash commands |
 | `references/` | Accounting policy defaults (P1-P16), journal library (J1-J22), document taxonomy, controls (C1-C14) and reconciliations (R1-R8) |
-| `scripts/pe_calcs.py` | Deterministic calculations: XIRR, DPI / RVPI / TVPI, KS-PME, unfunded, NAV roll-forward, management fee, European waterfall |
-| `templates/` | CSV schemas: fund master, cash-flow ledger, NAV history, document register, break log, GL mapping, journal export, compliance tracker, WHT register |
-| `tests/` | Unit tests and independent benchmark tests |
+| `references/calculations.md` | Deterministic calculations: XIRR, DPI / RVPI / TVPI, KS-PME, unfunded, NAV roll-forward, management fee, European waterfall |
+| `references/templates.md` | Column layouts: fund master, cash-flow ledger, NAV history, document register, break log, GL mapping, journal export, compliance tracker, WHT register |
+| Repository `tools/` folder | Command-line calculator, CSV templates, unit and benchmark tests (kept outside the plugin folder) |
 | `VALIDATION.md` | Latest validation report: 33 of 33 checks passed |
 
 ## Skills and commands
@@ -40,10 +40,10 @@ Connect in Claude settings (not bundled): document storage (SharePoint / OneDriv
 
 ## Before first use
 
-1. Fill `templates/gl_mapping.csv` with your chart of accounts.
+1. Fill `references/templates.md` (section gl_mapping) with your chart of accounts.
 2. Review `references/policies.md` and record any overrides with `/policy-setup`.
 3. Onboard each fund with `/onboard-fund`.
-4. Run `python3 scripts/pe_calcs.py selftest`.
+4. Run `python3 references/calculations.md selftest`.
 
 IFRS paragraph references should be confirmed against https://www.ifrs.org by your technical accounting team before external use.
 

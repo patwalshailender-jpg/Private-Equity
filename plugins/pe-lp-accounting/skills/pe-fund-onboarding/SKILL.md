@@ -1,6 +1,6 @@
 ---
-name: pe-fund-onboarding
-description: Onboard a private equity fund commitment - fund due diligence checklist, IC commitment memo, LPA and side-letter abstraction into a fund master, and accounting policy setup. Use when the investor is considering or has signed a new LP commitment, or when policies need to be set or changed.
+name: "pe-fund-onboarding"
+description: "Onboard a private equity fund commitment - fund due diligence checklist, IC commitment memo, LPA and side-letter abstraction into a fund master, and accounting policy setup. Use when the investor is considering or has signed a new LP commitment, or when policies need to be set or changed."
 ---
 
 # Fund onboarding
@@ -12,7 +12,7 @@ Produce a checklist with findings and evidence for: GP track record (net IRR, TV
 Sections: recommendation; fund summary; terms table; track record; fit with allocation and pacing (call `pe-liquidity-tax` pacing output); key risks and mitigants; fees and total cost estimate; approval requested. Record the approval reference once granted - the fund master cannot be activated without it (control C9).
 
 ## 3. LPA abstraction (`/onboard-fund`)
-Read LPA, side letter and subscription documents. Fill every column of `${CLAUDE_PLUGIN_ROOT}/templates/fund_master.csv`:
+Read LPA, side letter and subscription documents. Fill every column of `${CLAUDE_PLUGIN_ROOT}/references/templates.md` (section fund_master):
 - Identity: fund code, name, GP, administrator, auditor, domicile, vintage, strategy, geography, currency.
 - Commitment: amount, total fund size, our close, equalisation terms.
 - Term: investment period end, term, extensions, key-person clause.

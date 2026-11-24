@@ -8,9 +8,9 @@
 
 | Test suite | File | Checks | Result |
 |---|---|---|---|
-| Independent benchmarks | `tests/validate_benchmarks.py` | 19 | 19 passed |
-| Built-in self-test | `scripts/pe_calcs.py selftest` | 9 | 9 passed |
-| Unit tests | `tests/test_pe_calcs.py` | 5 | 5 passed |
+| Independent benchmarks | `tools/tests/validate_benchmarks.py` | 19 | 19 passed |
+| Built-in self-test | `references/calculations.md selftest` | 9 | 9 passed |
+| Unit tests | `tools/tests/test_pe_calcs.py` | 5 | 5 passed |
 | **Total** | | **33** | **33 passed** |
 
 ## 2. Benchmark results
@@ -39,7 +39,7 @@
 
 ## 3. Sample fund (end-to-end test)
 
-Source: `tests/sample_cashflows.csv`, adjusted NAV 5,200,000 at 30 September 2026.
+Source: `tools/tests/sample_cashflows.csv`, adjusted NAV 5,200,000 at 30 September 2026.
 
 | Measure | Result |
 |---|---|
@@ -68,7 +68,7 @@ Source: `tests/sample_cashflows.csv`, adjusted NAV 5,200,000 at 30 September 202
 ## 6. How to re-run
 
 ```bash
-python3 plugins/pe-lp-accounting/tests/validate_benchmarks.py
-python3 plugins/pe-lp-accounting/scripts/pe_calcs.py selftest
-python3 -m unittest discover -s plugins/pe-lp-accounting/tests -v
+python3 tools/tests/validate_benchmarks.py
+python3 plugins/pe-lp-accounting/references/calculations.md selftest
+python3 -m unittest discover -s tools/tests -v
 ```

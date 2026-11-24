@@ -1,15 +1,15 @@
 ---
-name: pe-fees-carry
-description: Independently recalculate private equity management fees, fee offsets, fund expenses and carried interest against LPA and side-letter terms, quantify variances and draft GP query letters. Use when validating a capital call fee, reviewing quarterly fees, checking GP carry accruals or comparing total cost of ownership across funds.
+name: "pe-fees-carry"
+description: "Independently recalculate private equity management fees, fee offsets, fund expenses and carried interest against LPA and side-letter terms, quantify variances and draft GP query letters. Use when validating a capital call fee, reviewing quarterly fees, checking GP carry accruals or comparing total cost of ownership across funds."
 ---
 
 # Fee, carry and expense validation
 
-Use `${CLAUDE_PLUGIN_ROOT}/scripts/pe_calcs.py` (`fee`, `waterfall`) for every calculation.
+Use `management_fee()` and `european_waterfall()` in `${CLAUDE_PLUGIN_ROOT}/references/calculations.md` for every calculation.
 
 ## Management fee (`/fee-check`)
 1. Fee base per fund master for the period: commitment (investment period) or invested capital / NAV (post-period step-down).
-2. `python3 pe_calcs.py fee --base <> --rate <> --start <> --end <> --offsets <> --discount <>` (Actual/365 unless LPA says otherwise).
+2. `management_fee(base, rate, start, end, offsets, discount)` (Actual/365 unless LPA says otherwise).
 3. Offsets: transaction, monitoring, director, break-up fees x offset % from LPA.
 4. Compare with the fee charged in calls / CAS. Variance > tolerance (P16) -> exception.
 

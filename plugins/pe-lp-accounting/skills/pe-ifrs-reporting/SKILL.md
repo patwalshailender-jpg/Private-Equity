@@ -1,6 +1,6 @@
 ---
-name: pe-ifrs-reporting
-description: Prepare IFRS financial statement content for private equity fund interests held by an investor - IFRS 9 classification, IFRS 10 / IAS 28 assessment, IFRS 13 Level 3 roll-forward and sensitivity, IFRS 7 risk and liquidity notes, IFRS 12 unconsolidated structured entity disclosures, IAS 21, IAS 7, IAS 8, IAS 24, commitments, and IFRS 18 presentation mapping from 2027. Use at quarter or year end, for audit, or for IFRS 18 transition.
+name: "pe-ifrs-reporting"
+description: "Prepare IFRS financial statement content for private equity fund interests held by an investor - IFRS 9 classification, IFRS 10 / IAS 28 assessment, IFRS 13 Level 3 roll-forward and sensitivity, IFRS 7 risk and liquidity notes, IFRS 12 unconsolidated structured entity disclosures, IAS 21, IAS 7, IAS 8, IAS 24, commitments, and IFRS 18 presentation mapping from 2027. Use at quarter or year end, for audit, or for IFRS 18 transition."
 ---
 
 # IFRS reporting and disclosures

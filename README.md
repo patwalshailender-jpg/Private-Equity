@@ -5,17 +5,17 @@ A Claude plugin marketplace containing **pe-lp-accounting**: end-to-end investor
 > **Disclaimer:** This plugin provides professional support for qualified finance teams. It is not accounting, audit, tax, legal or investment advice. All outputs, including figures, journal entries and IFRS disclosures, must be reviewed and approved by a qualified accountant before use. IFRS references should be confirmed against the current standards at https://www.ifrs.org.
 
 
-![version](https://img.shields.io/badge/version-1.0.2-blue) ![checks](https://img.shields.io/badge/validation-33%2F33%20passed-brightgreen) ![IFRS](https://img.shields.io/badge/IFRS-reviewed%20Nov%202026-informational)
+![version](https://img.shields.io/badge/version-1.0.3-blue) ![checks](https://img.shields.io/badge/validation-33%2F33%20passed-brightgreen) ![IFRS](https://img.shields.io/badge/IFRS-reviewed%20Nov%202026-informational)
 
 ## Validation checks
 
-**Last validated:** 24 November 2026 · **Version:** 1.0.2 · **Result:** 33 of 33 automated checks passed · [Full report](plugins/pe-lp-accounting/VALIDATION.md)
+**Last validated:** 24 November 2026 · **Version:** 1.0.3 · **Result:** 33 of 33 automated checks passed · [Full report](plugins/pe-lp-accounting/VALIDATION.md)
 
 | Test suite | Checks | Result |
 |---|---|---|
-| Independent benchmarks (`tests/validate_benchmarks.py`) | 19 | ✅ 19 passed |
-| Built-in self-test (`scripts/pe_calcs.py selftest`) | 9 | ✅ 9 passed |
-| Unit tests (`tests/test_pe_calcs.py`) | 5 | ✅ 5 passed |
+| Independent benchmarks (`tools/tests/validate_benchmarks.py`) | 19 | ✅ 19 passed |
+| Built-in self-test (`tools/scripts/pe_calcs.py selftest`) | 9 | ✅ 9 passed |
+| Unit tests (`tools/tests/test_pe_calcs.py`) | 5 | ✅ 5 passed |
 | **Total** | **33** | **✅ 33 passed** |
 
 | Area | What was tested | Result |
@@ -40,9 +40,9 @@ A Claude plugin marketplace containing **pe-lp-accounting**: end-to-end investor
 **Re-run the checks:**
 
 ```bash
-python3 plugins/pe-lp-accounting/tests/validate_benchmarks.py
-python3 plugins/pe-lp-accounting/scripts/pe_calcs.py selftest
-python3 -m unittest discover -s plugins/pe-lp-accounting/tests -v
+python3 tools/tests/validate_benchmarks.py
+python3 tools/scripts/pe_calcs.py selftest
+python3 -m unittest discover -s tools/tests -v
 ```
 
 ## Repository layout
@@ -90,7 +90,7 @@ Bump `version` in both `marketplace.json` and `plugin.json`, push, then run `/pl
 ## Test
 
 ```bash
-python3 -m unittest discover -s plugins/pe-lp-accounting/tests -v
+python3 -m unittest discover -s tools/tests -v
 ```
 
 ## Licence

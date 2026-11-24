@@ -1,6 +1,6 @@
 ---
-name: pe-compliance-audit
-description: Private equity audit support and investor-side compliance - build the audit PBC pack, draft responses to auditor queries with document references, track FATCA / CRS / KYC / AIFMD investor requests and sanctions screening, and monitor side-letter rights. Use at audit time, when an auditor or GP compliance request arrives, or for periodic side-letter checks.
+name: "pe-compliance-audit"
+description: "Private equity audit support and investor-side compliance - build the audit PBC pack, draft responses to auditor queries with document references, track FATCA / CRS / KYC / AIFMD investor requests and sanctions screening, and monitor side-letter rights. Use at audit time, when an auditor or GP compliance request arrives, or for periodic side-letter checks."
 ---
 
 # Audit support and compliance

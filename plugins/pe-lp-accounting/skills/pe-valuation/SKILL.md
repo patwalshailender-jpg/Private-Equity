@@ -1,6 +1,6 @@
 ---
-name: pe-valuation
-description: Determine fair value of private equity fund interests under IFRS 13 - capture GP capital account and NAV statements, roll lagged NAV forward to the reporting date, assess GP valuation quality against IPEV Guidelines, classify Level 3, back-test, and write the quarterly valuation memo. Use at each reporting date or when a new NAV statement arrives.
+name: "pe-valuation"
+description: "Determine fair value of private equity fund interests under IFRS 13 - capture GP capital account and NAV statements, roll lagged NAV forward to the reporting date, assess GP valuation quality against IPEV Guidelines, classify Level 3, back-test, and write the quarterly valuation memo. Use at each reporting date or when a new NAV statement arrives."
 ---
 
 # Valuation and NAV roll-forward
@@ -9,7 +9,7 @@ Policy: P7 in `${CLAUDE_PLUGIN_ROOT}/references/policies.md`. NAV is a starting 
 
 ## Roll-forward (`/nav-rollforward`)
 Adjusted NAV = (GP NAV at last report date + calls after - distributions after) x closing FX + market / known-event adjustments.
-Run `python3 ${CLAUDE_PLUGIN_ROOT}/scripts/pe_calcs.py rollforward --nav <> --calls <> --dists <> --fx <> --adj <>`.
+Compute with `nav_rollforward()` in `${CLAUDE_PLUGIN_ROOT}/references/calculations.md`.
 
 Steps per fund:
 1. Record GP report date; flag if older than one quarter (P16, C6).

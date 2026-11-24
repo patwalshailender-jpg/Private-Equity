@@ -1,6 +1,6 @@
 # Journal entry library (LP interest at FVTPL)
 
-Map account names to the entity's chart of accounts with `templates/gl_mapping.csv`.
+Map account names to the entity's chart of accounts with `references/templates.md` (section gl_mapping).
 Every journal line carries: journal no., date, fund code, source document ID, preparer, approver.
 
 | # | Event | Debit | Credit | Notes |

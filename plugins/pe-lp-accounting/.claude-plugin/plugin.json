@@ -1,6 +1,6 @@
 {
   "name": "pe-lp-accounting",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "End-to-end investor-side (LP) private equity accounting, reporting and IFRS compliance: document storage, capital calls, distributions, continuation vehicle elections, fund accounting and reconciliation, journal entries, NAV and performance reporting, IFRS 9 / 13 / 7 / 12 / 18 disclosures, fee and carry validation, liquidity and pacing, compliance, audit support and fund close-out.",
   "author": {
     "name": "patwalshailender-jpg"
