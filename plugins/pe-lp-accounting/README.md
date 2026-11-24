@@ -11,7 +11,8 @@ End-to-end private equity for the investor (Limited Partner), from fund due dili
 | `references/` | Accounting policy defaults (P1-P16), journal library (J1-J22), document taxonomy, controls (C1-C14) and reconciliations (R1-R8) |
 | `scripts/pe_calcs.py` | Deterministic calculations: XIRR, DPI / RVPI / TVPI, KS-PME, unfunded, NAV roll-forward, management fee, European waterfall |
 | `templates/` | CSV schemas: fund master, cash-flow ledger, NAV history, document register, break log, GL mapping, journal export, compliance tracker, WHT register |
-| `tests/` | Unit tests for the calculations |
+| `tests/` | Unit tests and independent benchmark tests |
+| `VALIDATION.md` | Latest validation report: 33 of 33 checks passed |
 
 ## Skills and commands
 
